@@ -1,38 +1,484 @@
-.App {
-  text-align: center;
+.main{
+  background-color: black;
+  display: flex;
+  width: 100%;
+  
+}
+.content {
+  padding-top: 80px; /* Adjust the top padding as needed to account for the fixed header */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .my-image {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .ame {
+    text-align: center;
+    margin-left: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  z-index: 9999;
+}
+
+.icon-container {
+  display: flex;
+  margin-left: 30px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 50px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: auto;
+  max-width: 100%;
+  margin-right: 5%;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+
+
+
+.footer {
+  margin-top: 8%;
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  clear: both;
+}
+
+
+.foot {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: blink 1s infinite;
+}
+
+.star:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0.2s;
+}
+
+.star:nth-child(2) {
+  top: 20%;
+  left: 80%;
+  animation-delay: 0.5s;
+}
+
+.star:nth-child(3) {
+  top: 40%;
+  left: 30%;
+  animation-delay: 0.8s;
+}
+.star:nth-child(4) {
+  top: 30%;
+  left: 70%;
+  animation-delay: 0.6s;
+}
+
+/* Add more .star styles as needed */
+
+
+
+
+
+/* Add more .spark styles as needed */
+
+
+
+
+/* Add more .butterfly styles as needed */
+
+/* Add more .star styles as needed */
+
+
+.small {
+  font-size: 20px;
+  color: skyblue;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 50px;
+  color: skyblue;
+}
+
+.name1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: violet;
+}
+
+.role {
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.job {
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.description {
+  text-align: left;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-right: 60px;
+  color: aqua;
+}
+
+.download-button {
+  background-color: goldenrod;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background-color: gold;
+}
+
+.about {
+  background-color: black;
+  color: violet;
+  padding: 20px;
+  text-align: center;
+}
+.my-image{
+  width: 150px;
+  height: auto;
+  
+  margin-left: 20%;
+}
+
+
+.about-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: black;
+  padding: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.about-intro {
+  margin-left: 40px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about-image {
+  margin-right: 40px;
+  z-index: 1;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
+}
+
+.ame {
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  margin-bottom: 20px;
+  margin-left: 54px;
+  margin-right: 15px;
+}
+.social-links{
+  margin-left: 15%;
+  margin-top: 5%;
+
+}
+
+.tech {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #eee;
+  color: #666;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.skills-list li:hover {
+  background-color: #ddd;
+}
+
+
+
+.icon-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.icon-link:hover {
+  opacity: 1;
+}
+
+.github-link {
+  bottom: 60px;
+}
+
+.linkedin-link {
+  bottom: 20px;
+}
+
+.contact-list {
+  position: fixed;
+  left: 20px; /* Adjust the left value as needed */
+  top: 50%; /* Adjust the top value as needed */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 9999;
+}
+
+.contact-link {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  color: white;
+  font-size: 40px;
+   /* Adjust the font size as needed */
+}
+
+.bright-white-line {
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.social-links1{
+  align-items: center;
+  
+}
+.box {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: black;
+  border: 15px solid green;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.lightning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  animation: lightning 2s infinite;
+  opacity: 0;
+}
+
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-20px);
   }
+}
+
+.a2 {
+  font-size: 16px;
+  color: pink;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.a1 {
+  font-size: 16px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.signature {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: writing 4s steps(20) forwards;
+}
+
+@keyframes writing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+.sp{
+  height:60px;
+}
+.hds{
+  color:goldenrod;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+/*skills */
+
+.skills-container {
+  margin-top: 20px;
+}
+
+.skills-category {
+  margin-bottom: 20px;
+}
+
+.skills-category h3 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skills-category h3 svg {
+  margin-right: 10px;
+}
+
+.skills-category ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-category li {
+  margin-bottom: 5px;
+}
+#stitle{
+  color: pink;
+  margin-left: 30%;
+}
+
+#smain {
+  position: relative;
+  margin: 0;
+  padding: 40px 0;
+  font-size: 40px;
+  font-weight: 888;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(180deg, orange 50%, skyblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.line {
+  width: 60%;
+  height: 1px;
+  margin-left:20%;
+  background-color: #FFFFFF; /* White color */
+}
+.ssvg{
+  text-align: center;
 }

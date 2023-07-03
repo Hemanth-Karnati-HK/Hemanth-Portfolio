@@ -1,0 +1,61 @@
+.certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .certificate {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .certificate:hover {
+    transform: translateY(-5px);
+  }
+  
+  .certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .certificate-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .certificate-title a {
+    color: greenyellow;
+    text-decoration: none;
+  }
+  
+  .certificate-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .certificate-pdf-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  #ptc {
+    position: relative;
+    margin: 0;
+    padding: 40px 0;
+    font-size: 40px;
+    font-weight: 888;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(180deg, gold 50%, violet 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
