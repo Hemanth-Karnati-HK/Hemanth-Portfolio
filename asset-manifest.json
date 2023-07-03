@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Hemanth-Portfolio/static/css/main.3c92c445.css",
+    "main.js": "/Hemanth-Portfolio/static/js/main.6d195a91.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Hemanth-Portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Icon.svg": "/Hemanth-Portfolio/static/media/Icon.6a285637cef31bbf3529df14659cfc0c.svg",
+    "static/media/p2.jpg": "/Hemanth-Portfolio/static/media/p2.c71e87425f0abefef2c3.jpg",
+    "static/media/p11.jpg": "/Hemanth-Portfolio/static/media/p11.708c5c88a7aa548164b2.jpg",
+    "static/media/p3.jpg": "/Hemanth-Portfolio/static/media/p3.5f3f81f40ee16cbed5c0.jpg",
+    "index.html": "/Hemanth-Portfolio/index.html",
+    "main.3c92c445.css.map": "/Hemanth-Portfolio/static/css/main.3c92c445.css.map",
+    "main.6d195a91.js.map": "/Hemanth-Portfolio/static/js/main.6d195a91.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Hemanth-Portfolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c92c445.css",
+    "static/js/main.6d195a91.js"
+  ]
+}
